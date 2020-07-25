@@ -15,6 +15,4 @@ https://github.com/sh4rpy/alien_invasion.git
 pip install -r requirements.txt
 ```
 
-Запустите файл alien_invasion.py
-
-Ставьте новые рекорды! с:
+Запустите файл alien_invasion.py и ставьте новые рекорды! с:
