@@ -4,6 +4,7 @@ from pygame.sprite import Sprite
 
 class Alien(Sprite):
     """Инициализирует пришельца и задает его начальную позицию"""
+
     def __init__(self, ai_settings, screen):
         super().__init__()
         self.ai_settings = ai_settings
@@ -19,7 +20,6 @@ class Alien(Sprite):
 
         self.x = float(self.rect.x)
 
-
     def check_edges(self):
         """"Контролирует левые и правые границы экрана"""
         screen_rect = self.screen.get_rect()
@@ -28,7 +28,6 @@ class Alien(Sprite):
         elif self.rect.left <= 0:
             return True
 
-    
     def update(self):
         """Перемещает пришельца вправо"""
         self.x += self.ai_settings.alien_speed_factor * self.ai_settings.fleet_derection
